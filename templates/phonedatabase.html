@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% set active_page = "phoneDatabase" %}
+{% block content %}
+
+
+
+<div class="container">
+    <div class="row justify-content-between m-5">
+        <div class="card shadow-lg phones m-3" style="width: 19rem;">
+            <img src="../static/imgs/s9+.jpeg" class="card-img-top" alt="...">
+            <div class="card-body " id="card-body-formatting">
+                <h5 class="card-title">Samsung Galaxy S9+</h5>
+                <p class="card-text">The Samsung Galaxy S9+ features a metal and glass design, with tapering edges on
+                    both sides. It has a 6.2-inch Quad HD+ Super...</p>
+                <div class="overlay">
+                    <span><a href="{{ url_for('s9')}}" class="btn btn-outline-info btn-lg btn-block ">View
+                            Phone</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg rounded phones m-3" style="width: 19rem;">
+            <img src="../static/imgs/s10.jpg" class="card-img-top" alt="..." height="200px"
+                style="object-fit: contain;">
+            <div class="card-body " id="card-body-formatting">
+                <h5 class="card-title">Samsung Galaxy S10</h5>
+                <p class="card-text">Samsung Galaxy S10 smartphone was launched in February 2019. The phone comes with a
+                    6.10-inch touchscreen display...</p>
+                <div class="overlay">
+                    <span><a href="{{ url_for('s10')}}" class="btn btn-outline-info btn-lg btn-block ">View
+                            Phone</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg phones m-3" style="width: 19rem;">
+            <img src="../static/imgs/iphone11maxpro.jpg" class="card-img-top" alt="..." height="200px"
+                style="object-fit: contain;">
+            <div class="card-body " id="card-body-formatting" <h5 class="card-title">iPhone 11 Max Pro</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                    the
+                    card's
+                    content.</p>
+                <div class="overlay">
+                    <span><a href="{{ url_for('iphone11')}}" class="btn btn-outline-info btn-lg btn-block ">View
+                            Phone</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}

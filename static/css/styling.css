@@ -1,0 +1,279 @@
+/*General stlying*/
+html{
+  overflow-x: hidden;
+}
+/*base.html styling*/
+
+#page-body {
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #08d9d6;
+}
+
+#page-header {
+  padding: 9px 0px;
+  padding-bottom: 9px;
+  background-color: #eaeaea;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#page-nav h1 {
+  font-size: 25px;
+  display: inline;
+  background-color: #252a34;
+  color: #eaeaea;
+  padding: 20px;
+  letter-spacing: 2px;
+  line-height: 3.4rem;
+}
+
+
+
+#page-nav ul {
+  margin-left: 35%;
+  padding: 0;
+  list-style: none;
+  display: inline;
+  position: relative;
+  font-size: 18px;
+  word-spacing: 39px;
+}
+#page-nav li {
+  display: inline;
+  padding: 10px;
+  word-spacing: 50px;
+}
+#page-nav a {
+  text-decoration: none;
+  color: #252a34;
+  padding: 0px;
+  word-spacing: 0px;
+  letter-spacing: 5px;
+}
+#page-nav a:hover {
+  color: #08d9d6;
+  font-weight: 420;
+  transition: ease-in-out 0.2s;
+}
+
+/*index page stlying*/
+#index-body {
+  background-color: crimson;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+  text-align: center;
+}		
+
+.index-container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#index-main-header {
+  background-color: blanchedalmond;
+  color: black;
+}
+
+#index-navbar {
+  background-color: #333;
+}
+
+#index-navbar ul {
+  padding: 0;
+  list-style: none;
+  word-spacing: 39px;
+}
+
+#index-navbar li {
+  display: inline;
+}
+
+#index-navbar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: blanchedalmond;
+  padding: 0px;
+  word-spacing: 0px;
+  letter-spacing: 5px;
+  
+}
+
+#index-navbar a:hover {
+  color: crimson;
+  transition: ease-in-out 0.2s;
+}
+
+#jtron {
+  height: 380px;
+  background-image: url("../imgs/jumbotron.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: hard-light;
+  color: #eaeaea;
+}
+
+#myInput {
+  background-color: blanchedalmond;
+  color: crimson;
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: blanchedalmond; /* Grey background color */
+  padding: px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: crimson; /* Add a hover effect to all links, except for headers */
+  color: blanchedalmond; 
+  transition: ease-in-out 0.1s;
+}
+
+
+/*Phone Database Styling*/
+.phones {
+  padding-top: 0;
+  border: 2px #eaeaea solid;
+}
+.card-img-top {
+  display: inline-block;
+}
+
+.phones .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #eaeaea;
+  opacity: 0;
+  transition: opacity 350ms ease-in-out;
+}
+#card-body-formatting {
+  background-color: #eaeaea;
+  color: #252a34;
+}
+.phones:hover .overlay {
+  opacity: 0.9;
+}
+.phones span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: blanchedalmond;
+}
+/*s9+ styling*/
+.return-link{
+	padding: 10px;
+	font-size: 20px;
+	color: #eaeaea;
+	background-color: #252a34;
+}
+.return-link:hover{
+	text-decoration: none;
+	color: #08d9d6;
+}
+.back-button{
+	margin-top: 80px;
+}
+.title{
+	background-color: #252a34;
+	color: #eaeaea;
+	width: 100%;
+}
+.title-text{
+font-weight: 100;
+font-size: 25px;
+padding: 5px;
+}
+
+.active-link a{
+	color:  #eaeaea !important;
+	background:#252a34;
+}
+.active-link a:hover{
+	color: #08d9d6 !important;
+}
+.specs-content{
+  background-color: #252a34;
+  color: #eaeaea !important;
+}
+
+/*login*/
+.login-container{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.login-form{
+  background: #252a34;
+  padding: 5%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  color: #eaeaea;
+}
+.login-form h3{
+  text-align: center;
+  color: #eaeaea;
+}
+.register-form{
+  padding: 5%;
+  background: #eaeaea;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.register-form h3{
+  text-align: center;
+  color: #252a34;
+}
+.login-container form{
+  padding: 10%;
+}
+.btnSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+.login-form .btnSubmit{
+  font-weight: 600;
+  color: #252a34;
+  background-color:#eaeaea;
+}
+.register-form .btnSubmit{
+  font-weight: 600;
+  color: #eaeaea;
+  background-color: #252a34;
+}
+.login-form .btnSubmit:hover{
+  color: #eaeaea;
+  background-color: #252a34;
+}
+.register-form .btnSubmit:hover{
+  color: #252a34;
+  background-color:#eaeaea;
+}
+

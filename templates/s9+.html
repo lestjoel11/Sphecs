@@ -1,0 +1,417 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="title">
+    <h2 class="text-center title-text">Samsung Galaxy S9+</h2>
+</div>
+<div class="row">
+    <div class="col-2 mt-3">
+        <a href="{{url_for('phoneDatabase')}}" class="return-link">
+            <i class="fas fa-arrow-circle-left"></i> Go back</a>
+    </div>
+
+</div>
+<div class="container">
+    <div class="col-12 border border-dark mt-2 specs-content">
+        <h1 class="text-center">Description</h1>
+        <p class="lead">The Samsung Galaxy S9+ features a metal and glass design, with tapering edges on both sides.
+            It has a 6.2-inch Quad HD+ Super AMOLED display with an 18.5:9 aspect ratio. Touch response and colours
+            are superb and it also supports HDR. The phone uses an Exynos 9810 octa-core SoC and comes with
+            6GB of RAM a choice of 64GB or 256GB internal storage, which is expandable. The stereo speakers delivers
+            good sound quality and there's wireless charging here too. The main highlight is the camera, which
+            features a variable aperture, super slow motion videos up to 960fps and AR Emojis. Camera performance is
+            good too, especially in low light. There's also a second telephoto lens for shooting portraits and for
+            optical zoom. The 3500mAh battery supports fast charging and should easily last an entire day on a
+            single charge.</p>
+
+
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <h1 class="text-center">Gallery</h1>
+                <div id="slideshow" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                        <li data-target="#slideshow" data-slide-to="1"></li>
+                        <li data-target="#slideshow" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../static/imgs/s9-slideshow1.jpg" width="100%" height="300" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static/imgs/s9-slideshow2.jpg" width="100%" height="300" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static/imgs/s9-slideshow3.jpg" width="100%" height="300" />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#slideshow" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-6">
+                <h1 class="text-center">Specifications</h1>
+                <h4 class="text-center">General</h4>
+                <table class="table table-sm text-white">
+                    <tbody>
+                        <tr>
+                            <td>Brand</td>
+                            <td>Samsung</td>
+                        </tr>
+                        <tr>
+                            <td>Model</td>
+                            <td>Galaxy S9+</td>
+                        </tr>
+                        <tr>
+                            <td>Release date</td>
+                            <td>March 2018</td>
+                        </tr>
+                        <tr>
+                            <td>Launched in India</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Form factor</td>
+                            <td>Touchscreen</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensions (mm)</td>
+                            <td>158.10 x 73.80 x 8.50</td>
+                        </tr>
+                        <tr>
+                            <td>Weight (g)</td>
+                            <td>189.00</td>
+                        </tr>
+                        <tr>
+                            <td>Battery capacity (mAh)</td>
+                            <td>3500</td>
+                        </tr>
+                        <tr>
+                            <td>Removable battery</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Fast charging</td>
+                            <td>Quick Charge 2.0</td>
+                        </tr>
+                        <tr>
+                            <td>Colours</td>
+                            <td>Burgundy Red, Coral Blue, Lilac Purple, Midnight Black, Polaris Blue, Sunrise Gold</td>
+                        </tr>
+                        <tr>
+                            <td>SAR value</td>
+                            <td>0.21</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 class=" text-center">Display</h4>
+
+                <table class="table table-sm  text-white">
+                    <tbody>
+                        <tr>
+                            <td>Screen size (inches)</td>
+                            <td>6.20</td>
+                        </tr>
+                        <tr>
+                            <td>Touchscreen</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Resolution</td>
+                            <td>1440x2960 pixels</td>
+                        </tr>
+                        <tr>
+                            <td>Protection type</td>
+                            <td>Gorilla Glass</td>
+                        </tr>
+                        <tr>
+                            <td>Aspect ratio</td>
+                            <td>18.5:9</td>
+                        </tr>
+                        <tr>
+                            <td>Pixels per inch (PPI)</td>
+                            <td>531</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 class=" text-center">Hardware</h4>
+                <table class="table table-sm  text-white"">
+                            <tbody>
+                                <tr>
+                                    <td>Processor</td>
+                                    <td>1.7GHz octa-core</td>
+                                </tr>
+                                <tr>
+                                    <td>Processor make</td>
+                                    <td>Samsung Exynos 9810</td>
+                                </tr>
+                                <tr>
+                                    <td>RAM</td>
+                                    <td>6GB</td>
+                                </tr>
+                                <tr>
+                                    <td>Internal storage</td>
+                                    <td>64GB</td>
+                                </tr>
+                                <tr>
+                                    <td>Expandable storage</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Expandable storage type</td>
+                                    <td>microSD</td>
+                                </tr>
+                                <tr>
+                                    <td>Expandable storage up to (GB)</td>
+                                    <td>400</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4 class=" text-center">Camera</h4>
+                    <table class="table table-sm  text-white">
+                        <tbody>
+                            <tr>
+                                <td>Rear camera</td>
+                                <td>12-megapixel</td>
+                            </tr>
+                            <tr>
+                                <td>Rear flash</td>
+                                <td>LED</td>
+                            </tr>
+                            <tr>
+                                <td>Front camera</td>
+                                <td>8-megapixel</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h4 class=" text-center">Software</h4>
+
+                    <table class="table table-sm  text-white">
+                        <tbody>
+                            <tr>
+                                <td>Operating system</td>
+                                <td>Android 8.0</td>
+                            </tr>
+                            <tr>
+                                <td>Skin</td>
+                                <td>Experience 9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 class=" text-center">Connectivity</h4>
+
+                    <table class="table table-sm  text-white">
+                        <tbody>
+                            <tr>
+                                <td>Wi-Fi</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Wi-Fi standards supported</td>
+                                <td>802.11 a/b/g/n/ac</td>
+                            </tr>
+                            <tr>
+                                <td>GPS</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Bluetooth</td>
+                                <td>Yes, v 5.00</td>
+                            </tr>
+                            <tr>
+                                <td>NFC</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>USB OTG</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>USB Type-C</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Headphones</td>
+                                <td>3.5mm</td>
+                            </tr>
+                            <tr>
+                                <td>Number of SIMs</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Wi-Fi Direct</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td colspan=" 2" class="font-weight-bold">SIM 1</td>
+                            </tr>
+                            <tr>
+                                <td>SIM Type</td>
+                                <td>Nano-SIM</td>
+                            </tr>
+                            <tr>
+                                <td>GSM/CDMA</td>
+                                <td>GSM</td>
+                            </tr>
+                            <tr>
+                                <td>3G</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>4G/ LTE</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Supports 4G in India (Band 40)</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="font-weight-bold">SIM 2</td>
+                            </tr>
+                            <tr>
+                                <td>SIM Type</td>
+                                <td>Nano-SIM</td>
+                            </tr>
+                            <tr>
+                                <td>GSM/CDMA</td>
+                                <td>GSM</td>
+                            </tr>
+                            <tr>
+                                <td>3G</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>4G/ LTE</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Supports 4G in India (Band 40)</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="text-center">Sensors</h4>
+
+                    <table class="table table-sm  text-white">
+                        <tbody>
+                            <tr>
+                                <td>Fingerprint sensor</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Compass/ Magnetometer</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Proximity sensor</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Accelerometer</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Ambient light sensor</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Gyroscope</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Barometer</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<div class=" row ">
+    <div class="container">
+        <div class=" title mb-4">
+            <h2 class="text-center title-text">Comments</h2>
+        </div>
+        {% if session['logged in'] == False %}
+        <div class="container">
+            <h3 class="text-center">Please <a href="/login">log in</a> to comment and view comments</h3>
+        </div>
+        {% else %}
+        <div class="container">
+            <form action="{{ url_for('post_comment_s9') }}" method="POST">
+                <div class="form-group row">
+                    <label for="Name" class="col-sm-2 col-form-label">username</label>
+                    <div class="col-sm-5">
+                        <input type="text" name=username readonly class="form-control-plaintext"
+                            value="{{usernamevalue}}">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="text-box" class="col-sm-2 col-form-label">comment</label>
+                    <div class="col-sm-5">
+                        <textarea class="form-control" rows="3" name=user_comment required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-7 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-info" value=Sign>Submit</button>
+                    </div>
+                </div>
+            </form>
+
+            {% for entry in entries %}
+            <ul class="list-unstyled">
+                <li class="media">
+                    <img src="https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&auto=format&fit=crop&w=1015&q=80"
+                        class="mr-3" alt="..." width="30px" height="30px">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">{{entry[0]}}</h5>
+                        {{entry[1]}}
+                    </div>
+                </li>
+            </ul>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    {% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html"%}
+{% block content %}
+<div class="title">
+	<h2 class="text-center title-text">Guest Book Comments</h2>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-2" style=" margin-top: 30px;">
+			<a href="{{url_for('guestbook')}}" class="return-link">
+				<i class="fas fa-arrow-circle-left"></i> Go back</a>
+		</div>
+		<div class="col-10" style=" margin-top: 20px;">
+			<table class="table table-hover table-striped">
+				<tr class="bg-white text-center">
+					<th>Name</th>
+					<th>Email</th>
+					<th>Comment</th>
+				</tr>
+				{% for entry in entries %}
+				<tr>
+					<td> {{ entry[0]}} </td>
+					<td> {{ entry[1]}} </td>
+					<td> {{ entry[2]}} </td>
+				</tr>
+				{% endfor %}
+
+			</table>
+		</div>
+	</div>
+
+
+	{% endblock %}

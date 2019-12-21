@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <title>Phone Database</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/styling.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+</head>
+<script src="../static/js/jquery-3.4.1.js"></script>
+<script src="../static/js/popper.min.js"></script>
+<script src="../static/js/bootstrap.bundle.js"></script>
+
+<body id="page-body">
+    <header id="page-header">
+        <nav id="page-nav">
+            <a href="{{ url_for('index')}}">
+                <h1><img src="../static/imgs/logo-dark.png" width="55px" height="46px">Sphecs
+                </h1>
+                <ul>
+                    <li style="text-align:right;" class=" {{"active-link" if active_page=="phoneDatabase" else ''}}">
+                        <a href=" {{ url_for('phoneDatabase')}}">Phone Database</a>
+                    </li>
+                    <li style=" text-align:right;" class="{{"active-link" if active_page=="guestBook" else ''}}">
+                        <a href="{{ url_for('guestbook')}}">Guestbook</a>
+                    </li>
+                    <li class=" {{"active-link" if active_page=="aboutus" else ''}}">
+                        <a href="{{ url_for('aboutus')}}">About Us</a>
+                    </li>
+                    <li class=" {{"active-link" if active_page=="login" else ''}}">
+                        <a href="{{"/login" if session['logged in'] == False else "/logout"}}">{{"Login" if session['logged in'] == False else 'Log Out'}}
+                        </a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+    </div>
+
+
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+
+</html>

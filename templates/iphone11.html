@@ -1,0 +1,403 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="title">
+    <h2 class="text-center title-text">iPhone 11 Max Pro</h2>
+</div>
+<div class="row">
+    <div class="col-2 mt-3">
+        <a href="{{url_for('phoneDatabase')}}" class="return-link">
+            <i class="fas fa-arrow-circle-left"></i> Go back</a>
+    </div>
+
+</div>
+<div class="container">
+    <div class="col-12 border border-dark mt-2 specs-content">
+        <h2 class="text-center">Description</h2>
+        <p class="lead">The biggest iPhone in Apple's lineup, the iPhone 11 Pro Max looks like an incremental upgrade
+            over the iPhone XS Max but it brings some significant changes under the hood. There's a triple camera setup
+            at the back now, letting you choose between the Wide, Ultra Wide, and Telephoto lenses.
+
+            The Camera app makes it seamless to pick one or the other, presenting the Ultra Wide camera as a 0.5x zoom,
+            which is certainly an interesting perspective. All this is backed by improved HDR and a brand new Night
+            Mode, which means you get excellent image and video quality in most conditions. For the first time in years,
+            Apple's phones not only compete, but often surpass the competition in terms of low light photography.
+
+            An area where Apple's dominance has never really been in doubt has been chip design, and the new Apple A13
+            Bionic chip continues this tradition. From intensive gaming sessions to editing 4K videos on the go, iPhone
+            11 Pro Max will handle everything you throw at it with ease, and then some.
+
+            There are significant gains to be had in the battery life department as well, and even users with the
+            heaviest of workloads shouldn't have a problem lasting a full day. Most typical users will find the iPhone
+            11 Pro Max is, in fact, capable of lasting up to two days on a single charge. iOS 13 brings a host of new
+            features and the promise of regular software updates.</p>
+
+
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <h2 class="text-center">Gallery</h2>
+                <div id="slideshow" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                        <li data-target="#slideshow" data-slide-to="1"></li>
+                        <li data-target="#slideshow" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../static/imgs/iphone11maxpro.jpg" width="100%" height="300" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static/imgs/iphone11maxpro-slideshow-1.jpg" width="100%" height="300" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static/imgs/iphone11maxpro-slideshow-2.jpg" width="100%" height="300" />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#slideshow" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-6">
+                <h2 class="text-center">Specifications</h2>
+                <h4 class="text-center">General</h4>
+                <table class="table table-sm text-white">
+                    <tbody>
+                        <tr>
+                            <td>Brand</td>
+                            <td>Apple</td>
+                        </tr>
+                        <tr>
+                            <td>Model</td>
+                            <td>iPhone 11 Pro Max</td>
+                        </tr>
+                        <tr>
+                            <td>Release date</td>
+                            <td>10th September 2019</td>
+                        </tr>
+                        <tr>
+                            <td>Launched in India</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Form factor</td>
+                            <td>Touchscreen</td>
+                        </tr>
+                        <tr>
+                            <td>Body type</td>
+                            <td>Glass</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensions (mm)</td>
+                            <td>158.00 x 77.80 x 8.10</td>
+                        </tr>
+                        <tr>
+                            <td>Weight (g)</td>
+                            <td>226.00</td>
+                        </tr>
+                        <tr>
+                            <td>IP rating</td>
+                            <td>IP68</td>
+                        </tr>
+                        <tr>
+                            <td>Battery capacity (mAh)</td>
+                            <td>3969</td>
+                        </tr>
+                        <tr>
+                            <td>Removable battery</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Fast charging</td>
+                            <td>Proprietary</td>
+                        </tr>
+                        <tr>
+                            <td>Wireless charging</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Colours</td>
+                            <td>Gold, Midnight Green, Silver, Space Grey</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4 class="text-center">Display</h4>
+                <table class="table table-sm text-white">
+                    <tbody>
+                        <tr>
+                            <td>Screen size (inches)</td>
+                            <td>6.50</td>
+                        </tr>
+                        <tr>
+                            <td>Touchscreen</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Resolution</td>
+                            <td>1242x2688 pixels</td>
+                        </tr>
+                        <tr>
+                            <td>Pixels per inch (PPI)</td>
+                            <td>458</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4 class="text-center">Hardware</h4>
+                <table class="table table-sm text-white">
+                    <tbody>
+                        <tr>
+                            <td>Processor</td>
+                            <td>hexa-core</td>
+                        </tr>
+                        <tr>
+                            <td>Processor make</td>
+                            <td>Apple A13 Bionic</td>
+                        </tr>
+                        <tr>
+                            <td>RAM</td>
+                            <td>4GB</td>
+                        </tr>
+                        <tr>
+                            <td>Internal storage</td>
+                            <td>64GB</td>
+                        </tr>
+                        <tr>
+                            <td>Expandable storage</td>
+                            <td>No</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4 class="text-center">Camera</h4>
+                <table class="table table-sm text-white">
+                    <tbody>
+                        <tr>
+                            <td>Rear camera</td>
+                            <td>12-megapixel (f/1.8) + 12-megapixel (f/2.4) + 12-megapixel (f/2.0)</td>
+                        </tr>
+                        <tr>
+                            <td>Rear autofocus</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Rear flash</td>
+                            <td>Dual LED</td>
+                        </tr>
+                        <tr>
+                            <td>Front camera</td>
+                            <td>12-megapixel (f/2.2)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4 class="text-center">Software</h4>
+                <table class="table table-sm text-white">
+                    <tbody>
+                        <tr>
+                            <td>Operating system</td>
+                            <td>iOS 13</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4 class="text-center">Connectivity</h4>
+                <table class="table table-sm text-white">
+                    <tbody>
+                        <tr>
+                            <td>Wi-Fi</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Wi-Fi standards supported</td>
+                            <td>802.11 a/b/g/n/ac/Yes</td>
+                        </tr>
+                        <tr>
+                            <td>GPS</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Bluetooth</td>
+                            <td>Yes, v 5.00</td>
+                        </tr>
+                        <tr>
+                            <td>NFC</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Lightning</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Headphones</td>
+                            <td>Lightning</td>
+                        </tr>
+                        <tr>
+                            <td>Number of SIMs</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td colspan=" 2" class="_sim">SIM 1</td>
+                        </tr>
+                        <tr>
+                            <td>SIM Type</td>
+                            <td>Nano-SIM</td>
+                        </tr>
+                        <tr>
+                            <td>GSM/CDMA</td>
+                            <td>GSM</td>
+                        </tr>
+                        <tr>
+                            <td>3G</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>4G/ LTE</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Supports 4G in India (Band 40)</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="_sim">SIM 2</td>
+                        </tr>
+                        <tr>
+                            <td>SIM Type</td>
+                            <td>eSIM</td>
+                        </tr>
+                        <tr>
+                            <td>GSM/CDMA</td>
+                            <td>GSM</td>
+                        </tr>
+                        <tr>
+                            <td>3G</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>4G/ LTE</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Supports 4G in India (Band 40)</td>
+                            <td>Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4 class="text-center">Sensors</h4>
+                <table class="table table-sm text-white">
+                    <tbody>
+                        <tr>
+                            <td>Face unlock</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>3D face recognition</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Compass/ Magnetometer</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Proximity sensor</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Accelerometer</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Ambient light sensor</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Gyroscope</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Barometer</td>
+                            <td>Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <div class="container">
+        <div class=" row ">
+            <div class=" title mb-4">
+                <h2 class="text-center title-text">Comments</h2>
+            </div>
+        </div>
+        {% if session['logged in'] == False %}
+        <div class="container">
+            <h3 class="text-center">Please <a href="/login">log in</a> to comment and view comments</h3>
+        </div>
+        {% else %}
+        <div class="container">
+            <form action="{{ url_for('post_comment_iphone11') }}" method="POST">
+                <div class="form-group row">
+                    <label for="Name" class="col-sm-2 col-form-label">username</label>
+                    <div class="col-sm-5">
+                        <input type="text" name=username readonly class="form-control-plaintext"
+                            value="{{usernamevalue}}">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="text-box" class="col-sm-2 col-form-label">comment</label>
+                    <div class="col-sm-5">
+                        <textarea class="form-control" rows="3" name=user_comment required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-7 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-info" value=Sign>Submit</button>
+                    </div>
+                </div>
+            </form>
+
+            {% for entry in entries %}
+            <ul class="list-unstyled">
+                <li class="media">
+                    <img src="https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&auto=format&fit=crop&w=1015&q=80"
+                        class="mr-3" alt="..." width="30px" height="30px">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">{{entry[0]}}</h5>
+                        {{entry[1]}}
+                    </div>
+                </li>
+            </ul>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    {% endblock %}

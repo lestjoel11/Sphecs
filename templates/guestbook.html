@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% set active_page = "guestBook" %}
+{% block content %}
+<div class="title">
+  <h2 class="text-center title-text">Guestbook</h2>
+</div>
+<br>
+<div class="container">
+  <form action="{{ url_for('sign') }}" method="POST">
+    <div class="form-group row">
+      <label for="Name" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" name=name required autocomplete="off">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="Email" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-5">
+        <input type="email" class="form-control" name=email required autocomplete="off">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="text-box" class="col-sm-2 col-form-label">Comment</label>
+      <div class="col-sm-5">
+        <textarea class="form-control" rows="3" name=comment required></textarea>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-7 d-flex justify-content-end">
+        <button type="submit" class="btn btn-info" value=Sign>Submit</button>
+        <a href="/view" class="btn btn-info ml-1 p-2"> View Guestbook </a>
+      </div>
+    </div>
+  </form>
+
+  {% endblock %}
