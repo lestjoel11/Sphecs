@@ -5,7 +5,7 @@ Guestbook is available for non-registered users to post comments.
 
 Flask is the web framework used to render templates and provide logic for login in and try/except for error handling. 
 sqlite3 is used for the database.
-BeautifulSoup is used to scrape GSMarena for Video Links and News.
+BeautifulSoup is used to scrape one phone's specs and GSMarena for Video Links and News.
 
 ## Instructions
   1. Activate virtualenv
