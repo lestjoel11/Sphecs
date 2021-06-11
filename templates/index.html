@@ -28,7 +28,10 @@
         <li><a
             href="{{"/login" if session['logged in'] == False else "/logout"}}">{{"Login" if session['logged in'] == False else 'Log Out'}}</a>
         </li>
+        <li><a href="/news">News</a></li>
         <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/videos">Videos</a></li>
+        <li><a href="/topBrands">Top Brands</a></li>
         <li><a href="{{  url_for("guestbook") }}">Guestbook</a></li>
       </ul>
     </div>

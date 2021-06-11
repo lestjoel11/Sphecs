@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% set active_page = "topBrands" %}
+{% block content %}
+<div class="title">
+    <h2 class="text-center title-text">Top Brands</h2>
+</div>
+<div class="container mb-3">
+    <div class="col-12 border border-dark mt-2 specs-content rounded">
+        <h1 class="display-3 text-center">Samsung</h1>
+        <img src="../static/imgs/samsung_logo.png" alt="" width="450px" style="margin-left: 30%;">
+        {%for index in samsung_info%}
+        <p class="lead">{{index|safe}}
+        </p>
+        {%endfor%}
+        <footer class="blockquote-footer">Source: <cite title="Source Title"><a
+                    href="https://www.britannica.com/topic/Samsung-Electronics">Britannica Online</a></cite></footer>
+    </div>
+    <div class="col-12 border border-dark mt-2 specs-content  rounded">
+        <h1 class="display-3 text-center">Apple</h1>
+        <img src="../static/imgs/apple_logo.png" alt="" height="150px" style="margin-left: 44%;">
+        <p class=" lead">
+            {{apple_info1|safe}}
+            {%for p in apple_info2%}
+            {{p|safe}}
+            {%endfor%}
+        </p>
+        <footer class="blockquote-footer">Source: <cite title="Source Title"><a
+                    href="https://www.britannica.com/topic/Apple-Inc">Britannica Online</a></cite></footer>
+    </div>
+</div>
+{%endblock%}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-    <title>Phone Database</title>
+    <title>Sphecs</title>
     <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="../static/css/styling.css" />
     <link rel="stylesheet" type="text/css"
@@ -22,18 +22,27 @@
                 <h1><img src="../static/imgs/logo-dark.png" width="55px" height="46px">Sphecs
                 </h1>
                 <ul>
-                    <li style="text-align:right;" class=" {{"active-link" if active_page=="phoneDatabase" else ''}}">
+                    <li class=" {{"active-link" if active_page=="phoneDatabase" else ''}}">
                         <a href=" {{ url_for('phoneDatabase')}}">Phone Database</a>
                     </li>
-                    <li style=" text-align:right;" class="{{"active-link" if active_page=="guestBook" else ''}}">
-                        <a href="{{ url_for('guestbook')}}">Guestbook</a>
+                    <li class=" {{"active-link" if active_page=="newsPage" else ''}}">
+                        <a href="{{ url_for('newsPage')}}">News</a>
                     </li>
                     <li class=" {{"active-link" if active_page=="aboutus" else ''}}">
                         <a href="{{ url_for('aboutus')}}">About Us</a>
                     </li>
+                    <li class=" {{"active-link" if active_page=="videos" else ''}}">
+                        <a href="{{ url_for('videos')}}">Videos</a>
+                    </li>
+                    <li class=" {{"active-link" if active_page=="topBrands" else ''}}">
+                        <a href="{{ url_for('topBrands')}}">Top Brands</a>
+                    </li>
                     <li class=" {{"active-link" if active_page=="login" else ''}}">
                         <a href="{{"/login" if session['logged in'] == False else "/logout"}}">{{"Login" if session['logged in'] == False else 'Log Out'}}
                         </a>
+                    </li>
+                    <li style=" text-align:right;" class="{{"active-link" if active_page=="guestBook" else ''}}">
+                        <a href="{{ url_for('guestbook')}}">Guestbook</a>
                     </li>
                 </ul>
         </nav>

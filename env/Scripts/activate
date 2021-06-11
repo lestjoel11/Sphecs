@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Lester\Desktop\ITX2000-Sphecs\env"
+VIRTUAL_ENV="C:\Users\Lester\Desktop\Projects\ITX2000-Sphecs-Year2\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

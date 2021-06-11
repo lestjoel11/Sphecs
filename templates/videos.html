@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% set active_page = "videos" %}
+{% block content %}
+<div class="title">
+    <h2 class="text-center title-text">Videos</h2>
+</div>
+<h1 class="display-4" style="margin-left: 25%;">Phone Video Reviews from GSMARENA</h1>
+<div class="container1" style="margin-left: 30%;">
+    {%for x in videos%}
+    <br>
+    {{x |safe}}
+    {%endfor%}
+</div>
+{% endblock %}

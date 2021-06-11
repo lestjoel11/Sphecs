@@ -2,9 +2,9 @@
 
 {% set active_page = "phoneDatabase" %}
 {% block content %}
-
-
-
+<div class="title">
+    <h2 class="text-center title-text">Phone Database</h2>
+</div>
 <div class="container">
     <div class="row justify-content-between m-5">
         <div class="card shadow-lg phones m-3" style="width: 19rem;">
@@ -37,11 +37,10 @@
         <div class="card shadow-lg phones m-3" style="width: 19rem;">
             <img src="../static/imgs/iphone11maxpro.jpg" class="card-img-top" alt="..." height="200px"
                 style="object-fit: contain;">
-            <div class="card-body " id="card-body-formatting" <h5 class="card-title">iPhone 11 Max Pro</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                    the
-                    card's
-                    content.</p>
+            <div class="card-body " id="card-body-formatting">
+                <h5 class="card-title">iPhone 11 Max Pro</h5>
+                <p class="card-text">iPhone 11 Pro smartphone was launched on 10th September 2019. The phone comes with
+                    a 5.80-inch touchscreen display...</p>
                 <div class="overlay">
                     <span><a href="{{ url_for('iphone11')}}" class="btn btn-outline-info btn-lg btn-block ">View
                             Phone</a></span>

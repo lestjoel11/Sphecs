@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% set active_page = "aboutus" %}
 {% block content %}
+<div class="title">
+    <h2 class="text-center title-text">About Us</h2>
+</div>
 <div class="container border border-dark mt-5 p-5">
     <h1 class="display-5">About the website</h1>
     <p class="lead">We work to provide users with up to date and accurate information about phones that exist or are
@@ -22,7 +25,29 @@
         <span style="width: 50px;">Address: One Apple Park Way
             Cupertino, CA 95014.
             Contact number: (408) 996–1010</span>
-        <p>
+    </p>
+    <h1 class="display-5">Weather in Cupertino, CA for the next 7 days</h1>
+    <br>
+    <p class="lead">
+        <table class="table table-hover">
+            <thead class="thead-light">
+                <tr>
+                    <th>Day/Part of Day</th>
+                    <th>Temperature</th>
+                    <th>Conditions</th>
+                </tr>
+            </thead>
+            {%for x in range (9)%}
+            <tr>
+
+                <td>{{days[x]}}</td>
+                <td>{{week_weather[x]}}</td>
+                <td>{{weather_desc[x]}}</td>
+
+            </tr>
+            {%endfor%}
+        </table>
+    </p>
 </div>
 
 {% endblock %}
